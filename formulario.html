@@ -1,25 +1,30 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Cuenta</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS para estilos -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />  
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <title>Farmacia</title>
 </head>
-<body>
-    <header>
-        <!-- Aquí puedes agregar el encabezado de tu sitio, como el logotipo, menú de navegación, etc. -->
-        <h1>Farmacia Online</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <!-- Agrega más enlaces al menú de navegación si es necesario -->
-            </ul>
-        </nav>
-    </header>
     
-    <main>
+    <body>
+
+        <nav>
+            <img src="img/icono1.png" alt="Icono de la página" id="icono">
+            <a href="index.html"> Home </a>
+            <a href="receta.html"> Recetas </a> 
+            <a href="productos.html"> Productos </a>
+            <a href="formulario.html"> Crear Cuenta </a>
+        </nav>
+
+        <header class="cabeza">
+            <h1> Farmacia Online </h1>
+        </header>
+
         <h2>Crear Cuenta</h2>
-        <form action="procesar_registro.php" method="post">
+        <form action="melisaamelia.arce@gmail.com" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required><br><br>
             
@@ -46,11 +51,36 @@
             
             <input type="submit" value="Crear Cuenta">
         </form>
-    </main>
+    </body>
     
-    <footer>
-        <!-- Aquí puedes agregar el pie de página de tu sitio, como información de contacto, enlaces a redes sociales, etc. -->
-        <p>&copy; 2024 Farmacia Online</p>
+    <footer class = "pie">
+        <div class="footer-container">
+            <div class="footer-section contact-details">
+                <h4>Detalles de Contacto</h4>
+                <p>Farmacia de tu Barrio</p>
+                <p>Dirección: Calle Falsa 123, Buenos Aires, Argentina</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Email: contacto@farmaciadetubarrio.com</p>
+            </div>
+            <div class="footer-section useful-info">
+                <h4>Información Útil</h4>
+                <p>Horarios: Lunes a Viernes de 9:00 AM a 8:00 PM</p>
+                <p>Sábados de 9:00 AM a 3:00 PM</p>
+                <p>Servicios: Recetas, Entrega a Domicilio, Asesoría Farmacéutica</p>
+            </div>
+            <div class="footer-section social-links">
+                <h4>Síguenos en</h4>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook_logo_icon_147291.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="img/twitter_x_new_logo_x_rounded_icon_256078.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img/Instagram_icon-icons.com_66804.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

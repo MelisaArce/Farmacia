@@ -16,35 +16,62 @@
         <a href="index.html"> Home </a>
         <a href="receta.html"> Recetas </a> 
         <a href="productos.html"> Productos </a>
+        <a href="formulario.html"> Crear Cuenta </a>
     </nav>
 
     <header class="cabeza">
         <h1> Farmacia </h1>
     </header>
-<section>
+    <section>
 
-    <h2> La Farmacia de tu barrio </h2>
-    <img src="img/h1.jpg" width="500" class="farm">
-   
-      
-    <h3>Ubicación:</h3>
-        <div id="map"></div>
-
-        <script>
-            var map = L.map('map').setView([-34.6037, -58.3816], 15); // Coordenadas del Obelisco y nivel de zoom
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-            L.marker([-34.6037, -58.3816]).addTo(map)
-                .bindPopup('Tu Farmacia Aqui')
-                .openPopup();
-        </script>
+        <h2> La Farmacia de tu barrio </h2>
+        <img src="img/h1.jpg" width="500" class="farm">
+    
         
-                
-</section>
+        <h3>Ubicación:</h3>
+            <div id="map"></div>
+
+            <script>
+                var map = L.map('map').setView([-34.6037, -58.3816], 15); // Coordenadas del Obelisco y nivel de zoom
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+                L.marker([-34.6037, -58.3816]).addTo(map)
+                    .bindPopup('Tu Farmacia Aqui')
+                    .openPopup();
+            </script>
+            
+                    
+    </section>
 
     <footer class = "pie">
-        <h4> Contacto : lafarmaciadetubarrio@gmail.com </h4>
+        <div class="footer-container">
+            <div class="footer-section contact-details">
+                <h4>Detalles de Contacto</h4>
+                <p>Farmacia de tu Barrio</p>
+                <p>Dirección: Calle Falsa 123, Buenos Aires, Argentina</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Email: contacto@farmaciadetubarrio.com</p>
+            </div>
+            <div class="footer-section useful-info">
+                <h4>Información Útil</h4>
+                <p>Horarios: Lunes a Viernes de 9:00 AM a 8:00 PM</p>
+                <p>Sábados de 9:00 AM a 3:00 PM</p>
+                <p>Servicios: Recetas, Entrega a Domicilio, Asesoría Farmacéutica</p>
+            </div>
+            <div class="footer-section social-links">
+                <h4>Síguenos en</h4>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook_logo_icon_147291.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="img/twitter_x_new_logo_x_rounded_icon_256078.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img/Instagram_icon-icons.com_66804.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

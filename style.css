@@ -1,80 +1,139 @@
-*{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+/* Estilos generales */
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-body{
+
+body {
     background-image: url(img/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    }
-    
-.cabeza{
-   
-    background-color:cornflowerblue;
 }
 
-a{
+/* Estilos de navegación */
+nav {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+nav img#icono {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #0162f4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de enlaces */
+a {
     text-decoration: double;
     color: azure;
-    /*border: 2px solid cyan;*/
-    background-color: slateblue;
     margin: 5px;
     padding: 5px;
 }
 
-a:hover{
-
-    background-color: rgba(36, 5, 157, 0.412);
-    transition: .5s;
-    border-radius:30px;
+a:hover {
+    background-color: rgb(228, 252, 255);
+    transition: 0.5s;
+    border-radius: 30px;
     margin: 10px;
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 }
 
-h1{
+/* Encabezado */
+.cabeza {
+    background-color: rgb(142, 231, 247);
+}
+
+h1 {
     text-align: center;
     padding-top: 25px;
 }
 
-.pie{
-    background-color:steelblue;
+/* Estilos de pie de página */
+.pie {
+    background-color: #f8f9fa;
     text-align: left;
+    padding: 20px 0;
+    border-top: 1px solid #e7e7e7;
 }
 
-.farm{
-    padding-left:500px ;
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-nav{
-    background-color:slateblue;
-    text-align:left;
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    color: #6c757d;
+}
+
+.footer-section a {
+    display: inline-block;
     margin: 5px;
-    padding: 10px;
-    border-radius:30px; 
+    color: #6c757d;
+    text-decoration: none;
 }
 
-#icono { 
-    width: 50px;
-    height: 50px;  
-    border-radius: 30px;
+.footer-section a img {
+    width: 24px;
+    height: 24px;
 }
 
-#map{
-    width: 400px; 
-    height: 400px; 
-    display: block; 
-    margin: 0 auto; 
+.footer-section a:hover img {
+    filter: brightness(0.8);
 }
 
+/* Estilo específico para el icono en el pie de página */
+.farm {
+    padding-left: 500px;
+}
 
+/* Estilos de mapa */
+#map {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
 
-.contenedor1{
+/* Contenedor personalizado */
+.contenedor1 {
     font-family: 'Courier New', Courier, monospace;
-     font-size: 120%;
-     margin-bottom: 5%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     margin: 5%;
-} 
+    font-size: 120%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
