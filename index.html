@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="icon" href="img/favicon.ico" type="img/x-icon">  
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <title>Farmacia</title>
 </head>
@@ -12,36 +13,31 @@
 <body>
    
     <nav>
-        <img src="img/icono1.png" alt="Icono de la página" id="icono">
+        <img src="img/icono2.png" alt="Icono de la página" id="icono">
         <a href="index.html"> Home </a>
         <a href="receta.html"> Recetas </a> 
         <a href="productos.html"> Productos </a>
         <a href="formulario.html"> Crear Cuenta </a>
     </nav>
-
-    <header class="cabeza">
-        <h1> Farmacia </h1>
+    <header class="cabeza">    
+        <h1>Farmacia</h1>
     </header>
-    <section>
-
-        <h2> La Farmacia de tu barrio </h2>
-        <img src="img/h1.jpg" width="500" class="farm">
-    
-        
+    <section class="contenido-centrado">
+        <h2>La Farmacia de tu barrio</h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fon3LpNFSwU?si=g6pxMIJf8PE-f1rt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <h3>Ubicación:</h3>
-            <div id="map"></div>
-
-            <script>
-                var map = L.map('map').setView([-34.6037, -58.3816], 15); // Coordenadas del Obelisco y nivel de zoom
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(map);
-                L.marker([-34.6037, -58.3816]).addTo(map)
-                    .bindPopup('Tu Farmacia Aqui')
-                    .openPopup();
-            </script>
-            
-                    
+        <div id="map"></div>
+        <script>
+            var map = L.map('map').setView([-34.6037, -58.3816], 15); // Coordenadas del Obelisco y nivel de zoom
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            L.marker([-34.6037, -58.3816]).addTo(map)
+                .bindPopup('Tu Farmacia Aqui')
+                .openPopup();
+        </script>
     </section>
 
     <footer class = "pie">
